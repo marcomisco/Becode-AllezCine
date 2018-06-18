@@ -147,16 +147,61 @@ Table of Contents
 *  3.0 Content
 
 */
+    /* 3.4 Shop movies */
+    
+    #shopMovies {
+        padding: 15px;
+    }
+    
+    #shopMovies a {
+        display: block;
+        background-color: #aaa;
+        color: #0d0d0d;
+    }
+    
+    #shopMovies a span {
+        color: #fa4645;
+        float: right;
+    }
+    
+    #shopMovies h5 {
+        text-align: center;
+    }
+    
+    #shopMovies img {
+        width: 100%;
+    }
     /* 3.5 Contact */
+    
+    #contact {
+        /* position: relative;
+        top: 100px; */
+        margin-bottom: -100px;
+        /* background-color: #fff; */
+    }
+    
+    #contact form {
+        background-color: #fff;
+        position: relative;
+        /* top: 100px; */
+    }
     
     #contact input {
         display: inline-block;
-        /* margin-bottom: 20px; */
+        width: 100%;
+        margin-bottom: 20px;
         /* margin: 0 10px 20px; */
     }
     
     #contact textarea {
         width: 100%;
+        margin: 0 15px;
+        margin-bottom: 20px;
+    }
+    
+    #contact input[type="submit"] {
+        width: 200px;
+        margin-left: 15px;
     }
     /*
 
