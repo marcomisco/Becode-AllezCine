@@ -1,0 +1,54 @@
+.nav-link{
+    background-color: silver;
+    padding: 10px;
+    margin: 5px;
+    color:white;
+}
+
+.btn {
+    background-color: tomato;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border: 16px;
+}
+.rowheaderFoot{
+    background-color: tomato;
+}
+.d-block {
+    height: 426px;
+    
+
+}
+.titre1{
+    color:red;
+    padding: 12px;
+    
+}
+.titre2{
+    text-align: center;
+    color: white;
+}
+.nav{
+    padding: 12px;
+}
+.recherche{
+    height: 36px;
+    width: 170px;
+    border-color:black;
+    border-radius: 8px;
+    margin-left: 100px;
+    color: ghostwhite;
+    background-color: dimgrey;
+}
+#mainHeader{
+    background-color: grey;
+}
+.dropdown-menu{
+    background-color: tomato;
+}
+.film1{
+    height: 180px;
+    margin:10px;
+}
