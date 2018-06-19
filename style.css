@@ -21,6 +21,7 @@ Table of Contents
     3.4 Shop movies
     3.5 Contact
 4.0 Footer
+5.0 Cookies alert
 5.0 Responsive
     6.1 Smartphones (portrait and landscape) => 320px - 48Opx
     6.2 Smartphones (landscape) => 48O+ px
@@ -61,6 +62,10 @@ Table of Contents
         border-left: 3px solid #fa4645;
         padding-left: 15px;
         text-transform: uppercase;
+    }
+    
+    a:hover {
+        text-decoration: none;
     }
     /* 1.2 Buttons */
     
@@ -169,6 +174,7 @@ Table of Contents
         position: fixed;
         top: 30%;
         left: 0;
+        z-index: 100;
         /* height: 100px; */
         /* width: 100px; */
         /* background-color: #fa4645; */
@@ -185,12 +191,30 @@ Table of Contents
     #socialRibbons .socialItem a span {
         display: none;
         color: #fff;
+        width: 100px;
+        overflow: hidden;
+        word-break: keep-all;
+    }
+    
+    @keyframes displayRibbon {
+        from {
+            width: 0px;
+            display: none;
+        }
+        to {
+            width: 100px;
+            display: inline-block;
+        }
     }
     
     #socialRibbons .socialItem:hover a span {
-        width: 100px;
-        display: inline-block;
+        /* #socialRibbons .socialItem:active a span { */
+        /* width: 100px; */
+        display: inherit;
         text-align: center;
+        animation-name: displayRibbon;
+        animation-duration: 1s;
+        /* animation: displayRibbon 1s 6000s; */
     }
     /* #socialRibbons .socialItem:hover>a {
         padding-left: 100px;
@@ -355,6 +379,28 @@ Table of Contents
     
     #shopMovies img {
         width: 100%;
+    }
+    
+    #shopMovies #previousNext a {
+        background-color: #0d0d0d;
+        /* padding: 5px; */
+        color: #fff;
+        display: inline-block;
+        text-align: center;
+        font-size: 1.5em;
+        /* width: 36px; */
+        height: 24px;
+        ;
+    }
+    
+    #shopMovies #previousNext a i {
+        width: 24px;
+        position: relative;
+        bottom: 5px;
+    }
+    
+    #shopMovies #previousNext a:first-child {
+        margin-right: 2px;
     }
     
     #shopMovies #movieTrailer {
@@ -561,6 +607,73 @@ Table of Contents
         color: #fff;
         border: 1px solid #404040;
         padding: 5px;
+    }
+    
+    #mainFooter #footerSocial #backToTop {
+        /* float: right; */
+        border: 2px solid #fa4645;
+        padding: 5px;
+        border-radius: 25px;
+        position: absolute;
+        right: 50px;
+    }
+    
+    #mainFooter #footerSocial #backToTop i {
+        color: #fff;
+        border: none;
+        width: 34px;
+        height: 34px;
+    }
+    
+    #mainFooter #footerSocial #backToTop i::before {
+        display: inline-block;
+        margin-left: 1.5px;
+        /* font: normal normal normal 16px/1 FontAwesome; */
+        /* font-size: inherit; */
+        /* text-rendering: auto; */
+        /* -webkit-font-smoothing: antialiased; */
+        /* -moz-osx-font-smoothing: grayscale; */
+        /* transform: translate(0, 0); */
+        font-family: 'Font Awesome 5 Free';
+        content: "\f062";
+        color: #fff;
+    }
+    /*
+
+*  5.0 Cookies alert
+
+*/
+    
+    #cookiesAlert {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #0d0d0d;
+        color: #fff;
+        z-index: 100;
+        text-align: center;
+    }
+    
+    #cookiesAlert h6 {
+        font-size: 2em;
+        margin: 30px;
+    }
+    
+    #cookiesAlert h6 span {
+        color: #fa4645;
+    }
+    
+    #cookiesAlert p {
+        margin-bottom: 30px;
+    }
+    
+    #cookiesAlert a {
+        margin-bottom: 30px;
+    }
+    
+    #cookiesAlert a:hover {
+        /* border: 1px solid #fa4645; */
     }
     /*
 

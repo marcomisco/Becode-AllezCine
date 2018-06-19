@@ -95,7 +95,7 @@
                 <a href="#"><span>Dribble</span><i class="fab fa-dribbble"></i></a>
             </div>
             <div id="ribbonGoogle" class="socialItem">
-                <a href="#"><span>Google +</span><i class="fab fa-google-plus-g"></i></a>
+                <a href="#"><span>Google+</span><i class="fab fa-google-plus-g"></i></a>
             </div>
         </div>
 
@@ -342,8 +342,8 @@
         <h3 class="sectionTitle">Shop Movies</h3>
         <div id="shopMovies" class="container-fluid">
             <div class="row">
-                <div class="col-12 text-right">
-                    <a href="#">P</a><a href="#">N</a>
+                <div id="previousNext" class="col-12 text-right">
+                    <a href="#"><i class="fas fa-angle-left"></i></a><a href="#"><i class="fas fa-angle-right"></i></a>
                 </div>
                 <div class="col-7">
                     <div class="row">
@@ -437,7 +437,7 @@
                     <input type="text" name="contactSubject" id="contactSubject" placeholder="Subject">
                 </fieldset>
                 <textarea name="contactMessage" id="contactMessage"></textarea>
-                <input type="submit" value="Send message">
+                <input onclick="contactInfo(); return false;" type="submit" value="Send message">
             </form>
 
         </div>
@@ -542,6 +542,12 @@
             <!-- </div> -->
         </footer>
 
+        </div>
+        <div id="cookiesAlert">
+            <h6>Cookies on the <span>ALLEZ</span>CINE website</h6>
+            <p>We use cookies to ensure that we give you the best experience on our website. If you continue without changing your settings, we'll assume that you are happy to receive all cookies on our website. However, if you would like to, you can change
+                your cookie settings at any time.</p>
+            <a id="btnAcceptCookies" class="btn btn-primary">Got it !</a>
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="java.js"></script>
