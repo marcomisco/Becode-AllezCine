@@ -14,7 +14,8 @@ Table of Contents
     2.1 General
     2.2 Nav
 3.0 Content
-    3.1 Top ???
+    3.1 Social media ribbons
+    3.1 Featured top
     3.2 Featured movies
     3.3 Featured TV series
     3.4 Shop movies
@@ -63,10 +64,25 @@ Table of Contents
     }
     /* 1.2 Buttons */
     
+    .btn {
+        border-radius: 0;
+    }
+    
     .btn-primary {
         background-color: #fa4645;
         color: #fff;
         text-transform: uppercase;
+        border-color: #fa4645;
+    }
+    
+    .btn-primary:hover {
+        background-color: #ff5a5a;
+        border-color: #ff5a5a;
+    }
+    
+    .btn-more {
+        display: block;
+        margin: 20px auto;
     }
     /* 1.3 Forms */
     
@@ -90,8 +106,8 @@ Table of Contents
     }
     
     .btn {
-        background-color: tomato;
-        color: white;
+        /* background-color: tomato; */
+        /* color: white; */
         margin-left: auto;
         margin-right: auto;
         text-align: center;
@@ -147,29 +163,248 @@ Table of Contents
 *  3.0 Content
 
 */
-    /* 3.4 Shop movies */
+    /* 3.1 Social ribbons */
     
-    #shopMovies {
-        padding: 15px;
+    #socialRibbons {
+        position: fixed;
+        top: 30%;
+        left: 0;
+        /* height: 100px; */
+        /* width: 100px; */
+        /* background-color: #fa4645; */
     }
     
-    #shopMovies a {
-        display: block;
-        background-color: #aaa;
+    #socialRibbons .socialItem {
+        padding: 5px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        margin-bottom: 5px;
+        width: intrinsic;
+    }
+    
+    #socialRibbons .socialItem a span {
+        display: none;
+        color: #fff;
+    }
+    
+    #socialRibbons .socialItem:hover a span {
+        width: 100px;
+        display: inline-block;
+        text-align: center;
+    }
+    /* #socialRibbons .socialItem:hover>a {
+        padding-left: 100px;
+    } */
+    
+    #socialRibbons #ribbonTwitter {
+        background-color: #27a5f2;
+    }
+    /* #socialRibbons #ribbonTwitter:hover {
+        padding-left: 100px;
+    } */
+    
+    #socialRibbons #ribbonFacebook {
+        background-color: #406092;
+    }
+    
+    #socialRibbons #ribbonDribble {
+        background-color: #ee4d8c;
+    }
+    
+    #socialRibbons #ribbonGoogle {
+        background-color: #d9523e;
+    }
+    
+    #socialRibbons .socialItem a {
+        width: 100%;
+        display: inline-block;
+    }
+    
+    #socialRibbons .socialItem a i {
+        font-size: 1em;
+        color: #0d0d0d;
+        padding: 5px;
+        background-color: #fff;
+        border-radius: 20px;
+        text-align: center;
+    }
+    
+    #socialRibbons .socialItem a i:before {
+        width: 1em;
+        height: 1em;
+        display: inline-block;
+    }
+    /* 3.1 Featured top */
+    
+    #featuredTop {
+        margin: 15px auto 50px;
+    }
+    
+    #featuredTop .row {
+        border: 1px solid #eeedf2;
+        margin: 0;
+        padding-top: 30px;
+    }
+    
+    #featuredTop .row .col {
+        padding: 0 15px;
+    }
+    
+    #featuredTop .row .col:first-child {
+        padding-left: 30px;
+    }
+    
+    #featuredTop .row .col:last-child {
+        padding-right: 30px;
+    }
+    
+    #featuredTop .col a span {
+        /* color: #fa4645; */
+        float: right;
+        font-weight: 700;
+    }
+    /* 3.4 Featured movies - TV series */
+    
+    .featuredCategories a {
         color: #0d0d0d;
     }
     
-    #shopMovies a span {
+    .featuredCategories .col,
+    .featuredCategories .col-2 {
+        padding-right: 0;
+    }
+    
+    .featuredCategories .col:last-child,
+    .featuredCategories .col-2:last-child {
+        /* padding-right: 15px; */
+    }
+    
+    .featuredCategories .col h5,
+    .featuredCategories .col-2 h5 {
+        text-align: center;
+        margin: 0;
+        font-size: 1em;
+        /* line-height: 3em; */
+        padding: 0.6em 0 0;
+    }
+    
+    .featuredCategories .col img,
+    .featuredCategories .col-2 img {
+        width: 100%;
+    }
+    
+    .moviesFilters {
+        margin: 10px 0 20px;
+    }
+    
+    .moviesFilters a {
+        padding: 5px 0;
+        display: inline-block;
+        width: 150px;
+        text-align: center;
+        background-color: #eeedf2;
+        color: #0d0d0d;
+        margin-right: 3px;
+    }
+    
+    .moviesFilters a.active {
+        background-color: #fa4645;
+        color: #fff;
+    }
+    
+    .moviesFilters a:hover:not(.active) {
+        background-color: #ff5a5a;
+        color: #fff;
+    }
+    
+    #featuredMovies .row,
+    #featuredSeries .row {
+        margin-right: 0;
+    }
+    /* 3.4 Shop movies */
+    
+    #shopMovies {
+        padding: 0 30px;
+        /* margin: 0; */
+    }
+    
+    #shopMovies .col-7 .row .col-3 {
+        padding-right: 0;
+    }
+    
+    #shopMovies .col-3 a {
+        display: block;
+        background-color: #eeedf2;
+        color: #0d0d0d;
+    }
+    
+    #shopMovies .col-3 a p {
+        padding: 5px 10px;
+    }
+    
+    #shopMovies .col-3 a span {
         color: #fa4645;
         float: right;
     }
     
     #shopMovies h5 {
         text-align: center;
+        margin: 0.8em 0 0;
+        font-size: 1em;
     }
     
     #shopMovies img {
         width: 100%;
+    }
+    
+    #shopMovies #movieTrailer {
+        /* padding-left: 0; */
+    }
+    
+    #shopMovies #movieTrailer h5 {
+        text-align: left;
+        margin: 0;
+        color: #fa4645;
+        font-size: 1.5em;
+        line-height: 3em;
+    }
+    
+    #shopMovies #movieTrailer .trailerInfo {
+        background-color: #0d0d0d;
+        color: #fff;
+        /* text-align: center; */
+        padding: 0 1em 1em;
+    }
+    
+    #shopMovies #movieTrailer p {
+        display: inline-block;
+        width: 68%;
+        margin-bottom: 0.3em;
+    }
+    
+    #shopMovies #movieTrailer p:last-child {
+        margin-bottom: 0;
+    }
+    
+    #shopMovies #movieTrailer span {
+        color: #fa4645;
+        width: 30%;
+        display: inline-block;
+        /* text-align: left; */
+        vertical-align: top;
+    }
+    
+    #shopMovies #movieTrailer span::after {
+        content: ":";
+        display: inline-block;
+        margin-right: 20px;
+        float: right;
+    }
+    
+    #shopMovies #movieTrailer iframe {
+        width: 100%;
+        height: 50%;
+        margin-bottom: -6px;
     }
     /* 3.5 Contact */
     
@@ -212,7 +447,7 @@ Table of Contents
     #mainFooter {
         background-color: #0d0d0d;
         color: #fff;
-        padding: 120px 0 20px;
+        padding: 120px 15px 20px;
     }
     
     #mainFooter a {
@@ -326,4 +561,37 @@ Table of Contents
         color: #fff;
         border: 1px solid #404040;
         padding: 5px;
+    }
+    /*
+
+*  5.0 Responsive
+
+*/
+    /* 5.1 Small devices (landscape phones, 576px and up) */
+    
+    @media (min-width: 576px) {
+        .container {
+            max-width: 500px;
+        }
+    }
+    /* 5.2  Medium devices (tablets, 768px and up) */
+    
+    @media (min-width: 768px) {
+        .container {
+            max-width: 650px;
+        }
+    }
+    /* 5.3  Large devices (desktops, 992px and up) */
+    
+    @media (min-width: 992px) {
+        .container {
+            max-width: 880px;
+        }
+    }
+    /* 5.4  Extra large devices (large desktops, 1200px and up) */
+    
+    @media (min-width: 1200px) {
+        .container {
+            max-width: 1000px;
+        }
     }
