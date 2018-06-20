@@ -130,6 +130,7 @@ Table of Contents
     .titre1 {
         color: red;
         padding: 12px;
+        text-shadow: 8px;
     }
     
     .titre2 {
@@ -156,12 +157,15 @@ Table of Contents
     }
     
     .dropdown-menu {
-        background-color: tomato;
+        background-color: red;
     }
     
     .film1 {
         height: 180px;
         margin: 10px;
+    }
+    .filmo{
+        word-spacing: 10px;
     }
     /*
 
