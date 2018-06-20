@@ -638,6 +638,10 @@ Table of Contents
         content: "\f062";
         color: #fff;
     }
+    
+    #mainFooter #footerPosters a img {
+        width: 100%;
+    }
     /*
 
 *  5.0 Cookies alert
