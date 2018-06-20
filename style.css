@@ -164,7 +164,8 @@ Table of Contents
         height: 180px;
         margin: 10px;
     }
-    .filmo{
+    
+    .filmo {
         word-spacing: 10px;
     }
     /*
@@ -189,10 +190,12 @@ Table of Contents
         border-top-right-radius: 20px;
         border-bottom-right-radius: 20px;
         margin-bottom: 5px;
-        width: intrinsic;
+        /* width: intrinsic; */
+        width: fit-content;
     }
     
     #socialRibbons .socialItem a span {
+        /* #socialRibbons .socialItem button span { */
         display: none;
         color: #fff;
         width: 100px;
@@ -210,15 +213,33 @@ Table of Contents
             display: inline-block;
         }
     }
+    /* #socialRibbons .socialItem:hover a span { */
     
-    #socialRibbons .socialItem:hover a span {
+    #socialRibbons .socialItem a:active span {
         /* #socialRibbons .socialItem:active a span { */
         /* width: 100px; */
-        display: inherit;
+        /* animation: displayRibbon 1s 6000s; */
+        /* display: inherit;
+        text-align: center;
+        animation-name: displayRibbon;
+        animation-duration: 1s; */
+        width: 100px;
+        display: inline-block;
         text-align: center;
         animation-name: displayRibbon;
         animation-duration: 1s;
         /* animation: displayRibbon 1s 6000s; */
+        /* line-height: 2em; */
+        vertical-align: middle;
+        height: 100%;
+        /* margin-top: -1px; */
+        position: relative;
+        bottom: 1px;
+    }
+    
+    #socialRibbons .socialItem:focus a span {
+        width: 100px;
+        display: inline-block;
     }
     /* #socialRibbons .socialItem:hover>a {
         padding-left: 100px;
@@ -562,6 +583,13 @@ Table of Contents
         height: 80px;
         width: 130px;
         margin: 0px 10px 10px 0;
+    }
+    
+    #mainFooter #footerLatest a span {
+        display: inline-block;
+        width: calc(100% - 140px);
+        line-height: initial;
+        vertical-align: top;
     }
     
     #mainFooter #footerLatest ul li a {
