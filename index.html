@@ -19,21 +19,22 @@
     <div class="container-fluid">
         <header id="mainHeader">
             <ul class="nav">
-                <h1 class="titre1">Allez<span>cine</span>!</h1>
+                <h1 class="titre1">Allez<span>cine!</span></h1>
                 <li class="nav-item">
                     <a class="nav-link active" href="">Home</a>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Genres</a>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Comedie</a>
-                        <a class="dropdown-item" href="#">Fantastique</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Autres</a>
-                    </div>
-                </li>
-
+                <li class="nav-item">
+                        <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                         Genres
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#">Action</a>
+                          <a class="dropdown-item" href="#">Comédie</a>
+                          <a class="dropdown-item" href="#">Western</a>
+                        </div>
+                      </div>
+                      </li>
                 <li class="nav-item">
                     <a class="nav-link" href="">Critique</a>
                 </li>
@@ -41,62 +42,92 @@
                     <a class="nav-link " href=""> News</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " href=""> Contact</a>
+                    <a class="nav" href=""> Contact</a>
                 </li>
 
                 <input class="recherche" type="search" placeholder="Recherche" name="recherche" id="recherche">
             </ul>
 
-            <H1 class="titre2">Latest online Movies</H1>
-            <H3 class="titre2">IN space no one can hear your scream</H3>
-            <button type="button" class="btn ">Watch Trailer</button>
-            <!--carrousel-->
-            <div class="container">
-                <h2>Carousel Example</h2>
-                <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                    <!-- Indicators -->
-                    <ol class="carousel-indicators">
-                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#g" data-slide-to="1"></li>
-                        <li data-target="#myCarousel" data-slide-to="2"></li>
-                    </ol>
+            <H1 class="titre3">Latest <span>on</span>line<span> mo</span>vies</H1>
+            <H5 class="titre2">In space no one can hear your scream</H5>
+            <button type="button" class="botntrailer ">Watch Trailer</button>
 
-                    <!-- Wrapper for slides -->
-                    <div class="carousel-inner">
-                        <div class="item active">
-                            <img src="image/shutterisland-.jpg" alt="Los Angeles" style="width:100%;">
-                        </div>
+<div class="rowheaderFoot">
+    
+<h5>+32 0466 78 99</h5>  
+  <!-- Trigger/Open The Modal -->
+<div class="register">
+    <button id="myBtn"class="btnlogin">Login</button>
+    <button id="myBtn2"class="btnregister">Register</button>
+</div>
+</div>
+ 
 
-                        <div class="item">
-                            <img src="image/inception.jpg" alt="Chicago" style="width:100%;">
-                        </div>
+<!-- Modal -->
+<div id="myModal" class="modal">
 
-                        <div class="item">
-                            <img src="image/lesdeuxtours.jpg" alt="New york" style="width:100%;">
-                        </div>
-                    </div>
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <H1>Allez<span>Cine</span></H1>
+        <H4>Accédez à votre compte</H4>
 
-                    <!-- Left and right controls -->
-                    <a class="left carousel-control" href="#g" data-slide="prev">
-                        <span class="glyphicon glyphicon-chevron-left"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                        <span class="glyphicon glyphicon-chevron-right"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                </div>
-            </div>
+        <form>
+            Login:
+            <br>
+            <input type="text" placeholder="Enter Login" name="firstname">
+            <br>
+            <br> Password:
+            <br>
+            <input type="password" placeholder="Enter Password" name="lastname">
+            <br>
+            <br>
+            <a href="url">Mot de passe oublié?</a>
+            <br>
+            <br>
+            <input type="checkbox" checked id="connected" name="connected" value="connected">Rester connecté
+            <br>
+            <br>
+            <input class="submit" type="submit" value="Submit">
+            <a href="index.html">Cancel</a>
+        </form>
+    </div>
+</div>
 
+ 
+<div id="myModal2" class="modal2">
+<div class="modal-content2">
+    <span class="close2">&times;</span>
+    <H1>Allez<span>Cine</span></H1>
+    
 
-            <div class="rowheaderFoot">
-                <div>
-                    <h4>+32 0466 78 99</h4>
-                    <div class="btn-group" role="group" aria-label="Basic example">
-                        <button type="button" class="btn btn-secondary">Login</button>
-                        <button type="button" class="btn btn-secondary">Register</button>
-                    </div>
-                </div>
+    <form>
+        Login:
+        <br>
+        <input type="text" placeholder="Enter Login" name="firstname">
+        <br>
+        Email
+        <br>
+        <input type="email" placeholder="Enter Email" name="email">
+        <br> 
+        Password
+        <br>
+        <input type="password" placeholder="Enter Password" name="lastname">
+        <br>
+        Confirm Password
+        <br>
+        <input type="password" placeholder="Enter Password" name="lastname">
+        <br>
+        <br>
+        <input type="checkbox" checked id="connected2" name="connected" value="connected">J'accepte les conditions
+        <br>
+        <br>
+        <input class="submit2" type="submit" value="Submit">
+        <a href="index.html">Cancel</a>
+    </form>
+</div>
+</div>
+</div>
         </header>
 
         <div id="socialRibbons">
@@ -159,11 +190,125 @@
         <!-- .container - Featured Movies -->
         <div id="featuredMovies" class="container featuredCategories">
             <div class="row moviesFilters">
-                <a class="active" href="#">AAAA</a>
-                <a href="#">AAAA</a>
-                <a href="#">AAAA</a>
-                <a href="#">AAAA</a>
+                    <a  class="btn active" onclick="filterSelection('all')" href="#">Tous</a>
+                    <a class="btn" onclick="filterSelection('cars')" href="#">Action</a>
+                    <a class="btn" onclick="filterSelection('animals')"href="#">Policier</a>
             </div>
+            <div class="row">
+                <div class="col-2">
+                        <div class="filterDiv cars">
+                    <a href="">
+                        <img src="images/inception-2010-scifi.jpg" alt="Movie - Poster">
+                        <h5>Movie title</h5>
+                        <p>2016</p>
+                    </a>
+                </div>
+            </div>
+                <div class="col-2">
+                        <div class="filterDiv cars">
+                    <a href="">
+                        <img src="images/inception-2010-scifi.jpg" alt="Movie - Poster">
+                        <h5>Movie title</h5>
+                        <p>2016</p>
+                    </a>
+                </div>
+            </div>
+                <div class="col-2">
+                        <div class="filterDiv cars">
+                    <a href="">
+                        <img src="images/inception-2010-scifi.jpg" alt="Movie - Poster">
+                        <h5>Movie title</h5>
+                        <p>2016</p>
+                    </a>
+                </div>
+            </div>
+                <div class="col-2">
+                    <a href="">
+                            <div class="filterDiv animals">
+                        <img src="images/inception-2010-scifi.jpg" alt="Movie - Poster">
+                        <h5>Movie title</h5>
+                        <p>2016</p>
+                    </a>
+                </div>
+            </div>
+                <div class="col-2">
+                        <div class="filterDiv animals">
+                    <a href="">
+                        <img src="images/inception-2010-scifi.jpg" alt="Movie - Poster">
+                        <h5>Movie title</h5>
+                        <p>2016</p>
+                    </a>
+                </div>
+            </div>
+                <div class="col-2">
+                        <div class="filterDiv cars">
+                    <a href="">
+                        <img src="images/inception-2010-scifi.jpg" alt="Movie - Poster">
+                        <h5>Movie title</h5>
+                        <p>2016</p>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2">
+                        <div class="filterDiv cars">
+                    <a href="">
+                        <img src="images/inception-2010-scifi.jpg" alt="Movie - Poster">
+                        <h5>Movie title</h5>
+                        <p>2016</p>
+                    </a>
+                </div>
+            </div>
+                <div class="col-2">
+                        <div class="filterDiv cars">
+                    <a href="">
+                        <img src="images/inception-2010-scifi.jpg" alt="Movie - Poster">
+                        <h5>Movie title</h5>
+                        <p>2016</p>
+                    </a>
+                </div>
+            </div>
+                <div class="col-2">
+                        <div class="filterDiv cars">
+                    <a href="">
+                        <img src="images/inception-2010-scifi.jpg" alt="Movie - Poster">
+                        <h5>Movie title</h5>
+                        <p>2016</p>
+                    </a>
+                </div>
+            </div>
+                <div class="col-2">
+                        <div class="filterDiv cars">
+                    <a href="">
+                        <img src="images/inception-2010-scifi.jpg" alt="Movie - Poster">
+                        <h5>Movie title</h5>
+                        <p>2016</p>
+                    </a>
+                </div>
+            </div>
+                <div class="col-2">
+                        <div class="filterDiv cars">
+                    <a href="">
+                        <img src="images/inception-2010-scifi.jpg" alt="Movie - Poster">
+                        <h5>Movie title</h5>
+                        <p>2016</p>
+                    </a>
+                </div>
+            </div>
+                <div class="col-2">
+                        <div class="filterDiv cars">
+                    <a href="">
+                        <img src="images/inception-2010-scifi.jpg" alt="Movie - Poster">
+                        <h5>Movie title</h5>
+                        <p>2016</p>
+                    </a>
+                </div>
+                </div>
+            </div>
+            
+            
+            <div id="plusfilm" style="display:none;">
+                <div id="featuredMovies" class="container featuredCategories">
             <div class="row">
                 <div class="col-2">
                     <a href="">
@@ -208,53 +353,67 @@
                     </a>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-2">
-                    <a href="">
-                        <img src="images/inception-2010-scifi.jpg" alt="Movie - Poster">
-                        <h5>Movie title</h5>
-                        <p>2016</p>
-                    </a>
-                </div>
-                <div class="col-2">
-                    <a href="">
-                        <img src="images/inception-2010-scifi.jpg" alt="Movie - Poster">
-                        <h5>Movie title</h5>
-                        <p>2016</p>
-                    </a>
-                </div>
-                <div class="col-2">
-                    <a href="">
-                        <img src="images/inception-2010-scifi.jpg" alt="Movie - Poster">
-                        <h5>Movie title</h5>
-                        <p>2016</p>
-                    </a>
-                </div>
-                <div class="col-2">
-                    <a href="">
-                        <img src="images/inception-2010-scifi.jpg" alt="Movie - Poster">
-                        <h5>Movie title</h5>
-                        <p>2016</p>
-                    </a>
-                </div>
-                <div class="col-2">
-                    <a href="">
-                        <img src="images/inception-2010-scifi.jpg" alt="Movie - Poster">
-                        <h5>Movie title</h5>
-                        <p>2016</p>
-                    </a>
-                </div>
-                <div class="col-2">
-                    <a href="">
-                        <img src="images/inception-2010-scifi.jpg" alt="Movie - Poster">
-                        <h5>Movie title</h5>
-                        <p>2016</p>
-                    </a>
-                </div>
             </div>
-            <button class="btn btn-primary btn-more">More movies</button>
         </div>
+
+            
+            <button class="btn btn-primary btn-more"onclick="togglediv(this,'plusfilm');">More movies </button>
+        </div>
+        <div id="plusfilm" style="display:none;">
+                <div id="featuredMovies" class="container featuredCategories">
+            <div class="row">
+                <div class="col-2">
+                    <a href="">
+                        <img src="images/inception-2010-scifi.jpg" alt="Movie - Poster">
+                        <h5>Movie title</h5>
+                        <p>2016</p>
+                    </a>
+                </div>
+                <div class="col-2">
+                    <a href="">
+                        <img src="images/inception-2010-scifi.jpg" alt="Movie - Poster">
+                        <h5>Movie title</h5>
+                        <p>2016</p>
+                    </a>
+                </div>
+                <div class="col-2">
+                    <a href="">
+                        <img src="images/inception-2010-scifi.jpg" alt="Movie - Poster">
+                        <h5>Movie title</h5>
+                        <p>2016</p>
+                    </a>
+                </div>
+                <div class="col-2">
+                    <a href="">
+                        <img src="images/inception-2010-scifi.jpg" alt="Movie - Poster">
+                        <h5>Movie title</h5>
+                        <p>2016</p>
+                    </a>
+                </div>
+                <div class="col-2">
+                    <a href="">
+                        <img src="images/inception-2010-scifi.jpg" alt="Movie - Poster">
+                        <h5>Movie title</h5>
+                        <p>2016</p>
+                    </a>
+                </div>
+                <div class="col-2">
+                    <a href="">
+                        <img src="images/inception-2010-scifi.jpg" alt="Movie - Poster">
+                        <h5>Movie title</h5>
+                        <p>2016</p>
+                    </a>
+                </div>
+            </div>
+            </div>
+        </div>
+        
         <!-- .container - Featured Movies -->
+
+        
+
+
+
 
         <h3 class="sectionTitle">Featured TV series</h3>
         <div id="featuredSeries" class="container featuredCategories">
@@ -352,8 +511,58 @@
                     </a>
                 </div>
             </div>
-            <button class="btn btn-primary btn-more">More series</button>
+            <div id="plusserie" style="display:none;">
+                <div id="featuredMovies" class="container featuredCategories">
+            <div class="row">
+                <div class="col-2">
+                    <a href="">
+                        <img src="images/inception-2010-scifi.jpg" alt="Movie - Poster">
+                        <h5>Movie title</h5>
+                        <p>2016</p>
+                    </a>
+                </div>
+                <div class="col-2">
+                    <a href="">
+                        <img src="images/inception-2010-scifi.jpg" alt="Movie - Poster">
+                        <h5>Movie title</h5>
+                        <p>2016</p>
+                    </a>
+                </div>
+                <div class="col-2">
+                    <a href="">
+                        <img src="images/inception-2010-scifi.jpg" alt="Movie - Poster">
+                        <h5>Movie title</h5>
+                        <p>2016</p>
+                    </a>
+                </div>
+                <div class="col-2">
+                    <a href="">
+                        <img src="images/inception-2010-scifi.jpg" alt="Movie - Poster">
+                        <h5>Movie title</h5>
+                        <p>2016</p>
+                    </a>
+                </div>
+                <div class="col-2">
+                    <a href="">
+                        <img src="images/inception-2010-scifi.jpg" alt="Movie - Poster">
+                        <h5>Movie title</h5>
+                        <p>2016</p>
+                    </a>
+                </div>
+                <div class="col-2">
+                    <a href="">
+                        <img src="images/inception-2010-scifi.jpg" alt="Movie - Poster">
+                        <h5>Movie title</h5>
+                        <p>2016</p>
+                    </a>
+                </div>
+            </div>
+            </div>
         </div>
+        
+            <button class="btn btn-primary btn-more"onclick="togglediv2(this,'plusserie');">More series</button>
+            </div>
+          
 
         <h3 class="sectionTitle">Shop Movies</h3>
         <div id="shopMovies" class="container-fluid">
@@ -567,6 +776,10 @@
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="java.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    
 </body>
 
 </html>

@@ -51,8 +51,11 @@ Table of Contents
     h5,
     h6 {
         font-family: Helvetica, Arial, sans-serif;
+        text-transform: uppercase;
     }
-    
+    H1 span{
+        color: white;
+    }
     .container-fluid {
         padding: 0;
     }
@@ -63,7 +66,10 @@ Table of Contents
         padding-left: 15px;
         text-transform: uppercase;
     }
-    
+    h5{
+        color: white;
+
+    }
     a:hover {
         text-decoration: none;
     }
@@ -97,19 +103,158 @@ Table of Contents
         text-transform: uppercase;
         border: 1px solid #fa4645;
     }
+    .botntrailer{
+        background-color: red;
+        color: papayawhip;
+        text-align: center;
+        border: 1px red;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 14px;
+        margin-top: 8px;
+        padding:12px;
+    }
     /*
 
 *  2.0 Header
 
 */
     
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.modal2 {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+/* Modal Content */
+.modal-content {
+    background-color:#8aacd0f7;
+    margin: auto;
+    padding: 20px;
+    border: 2px solid tomato;
+    border-radius: 8px;
+    width: 70%;
+    text-align: center;
+}
+.modal-content2 {
+    background-color:#8aacd0f7;
+    margin: auto;
+    padding: 20px;
+    border: 2px solid tomato;
+    border-radius: 8px;
+    width: 70%;
+    text-align: center;
+}
+/* The Close Button */
+.close {
+    color: #fdf4f4;
+    float: right;
+    font-size: 58px;
+    font-weight: bold;
+}
+.close2 {
+    color: #fdf4f4;
+    float: right;
+    font-size: 58px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+.close2:hover,
+.close2:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+.submit{
+    height: 50px;
+    width: 90px;
+    border: 2px solid tomato;
+    border-radius: 8px;
+    background-color: tomato;
+    color:snow;
+    margin: 8px,
+}
+.submit2{
+    height: 50px;
+    width: 90px;
+    border: 2px solid tomato;
+    border-radius: 8px;
+    background-color: tomato;
+    color:snow;
+    margin: 8px,
+}
+.register{
+    margin-left: 15%;  
+  
+}
+.register2{
+    margin-left: 15%;  
+  
+}
+.btnlogin{
+    background-color: black;
+    color: aliceblue;
+    width: 120px;
+    margin-bottom: 1%; 
+    border: 1px solid black;
+    cursor: pointer;
+    
+}
+.btnregister{
+    background-color: black;
+    color: aliceblue;
+    width: 120px;
+    margin-bottom: 1%; 
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+
+
+
+
+
     .nav-link {
-        background-color: silver;
+        background-color:#343a4069;
         padding: 10px;
         margin: 5px;
         color: white;
     }
-    
+    .dropdown{
+        background-color:#343a4069;
+        margin: 9px;
+        color: white;
+        height: 10px;
+        
+    }
+  
     .btn {
         /* background-color: tomato; */
         /* color: white; */
@@ -131,25 +276,38 @@ Table of Contents
         color: red;
         padding: 12px;
         text-shadow: 8px;
+        font-weight: bold;
     }
     
     .titre2 {
         text-align: center;
+        color: #ffffffb5;
+    }
+    .titre3 {
+        text-align: center;
         color: white;
+        font-weight: bold;
+    }
+    .titre3 span{
+        color:red;
     }
     
     .nav {
         padding: 12px;
+        color: white;
     }
     
     .recherche {
         height: 36px;
-        width: 170px;
+        width: 270px;
         border-color: black;
         border-radius: 8px;
         margin-left: 100px;
-        color: ghostwhite;
-        background-color: dimgrey;
+        color: white;
+        background-color : #343a4069;
+        padding: 18px;
+        margin-top:8px;
+
     }
     
     #mainHeader {
@@ -157,7 +315,7 @@ Table of Contents
     }
     
     .dropdown-menu {
-        background-color: red;
+        background-color:#e25d5de8;
     }
     
     .film1 {
@@ -167,6 +325,16 @@ Table of Contents
     .filmo{
         word-spacing: 10px;
     }
+    .filterDiv {
+        float: left ;
+        color: #ffffff;
+        display: none;
+      }
+      
+      .show {
+        display: block;
+      }
+      
     /*
 
 *  3.0 Content
@@ -716,3 +884,4 @@ Table of Contents
             max-width: 1000px;
         }
     }
+    
