@@ -1,0 +1,337 @@
+{
+    "shopMovies": [{
+            "id": 0,
+            "title": "Storks",
+            "description": "Storks have moved on from delivering babies to packages. But when an order for a baby appears, the best delivery stork must scramble to fix the error by delivering the baby.",
+            "trailer": "https://www.youtube.com/embed/ZVzL94jZNdU",
+            "image": "images/storks.jpg",
+            "genres": [
+                { "label": "Drama" },
+                { "label": "Adventure" },
+                { "label": "Family" }
+            ],
+            "price": 18,
+            "date": "2016-08-01"
+        },
+        {
+            "id": 1,
+            "title": "Inception",
+            "description": "This is the description of the item",
+            "trailer": "https://www.youtube.com/embed/8hP9D6kZseM",
+            "image": "images/inception-2010-scifi.jpg",
+            "genres": [
+                { "label": "Action" },
+                { "label": "Adventure" },
+                { "label": "Family" }
+            ],
+            "price": 15,
+            "date": "2010-08-01"
+        },
+        {
+            "id": 2,
+            "title": "Batman movie",
+            "description": "A cooler-than-ever Bruce Wayne must deal with the usual suspects as they plan to rule Gotham City, while discovering that he has accidentally adopted a teenage orphan who wishes to become his sidekick.",
+            "trailer": "https://www.youtube.com/embed/rGQUKzSDhrg",
+            "image": "images/batmanmovie-2017-comedie.jpg",
+            "genres": [
+                { "label": "Action" },
+                { "label": "Animation" },
+                { "label": "Comedy" }
+            ],
+            "price": 15,
+            "date": "2010-02-10"
+        },
+        {
+            "id": 3,
+            "title": "Hostel",
+            "description": "Three backpackers head to a Slovak city that promises to meet their hedonistic expectations, with no idea of the hell that awaits them.",
+            "trailer": "https://www.youtube.com/embed/4d5_lrn9v-g",
+            "image": "images/hostel-2005-thriller.jpg",
+            "genres": [
+                { "label": "Thriller" },
+                { "label": "Horror" },
+                { "label": "Mystery" }
+            ],
+            "price": 15,
+            "date": "2006-01-06"
+        },
+        {
+            "id": 4,
+            "title": "Swiss Army Man",
+            "description": "A hopeless man stranded on a deserted island befriends a dead body and together they go on a surreal journey to get home.",
+            "trailer": "https://www.youtube.com/embed/yrK1f4TsQfM",
+            "image": "images/swissarmyman-2016-comedie.jpg",
+            "genres": [
+                { "label": "Drama" },
+                { "label": "Adventure" },
+                { "label": "Comedy" }
+            ],
+            "price": 15,
+            "date": "2016-07-01"
+        },
+        {
+            "id": 5,
+            "title": "Inception",
+            "description": "This is the description of the item",
+            "trailer": "https://www.youtube.com/embed/8hP9D6kZseM",
+            "image": "images/inception-2010-scifi.jpg",
+            "genres": [
+                { "label": "Action" },
+                { "label": "Adventure" },
+                { "label": "Family" }
+            ],
+            "price": 15,
+            "date": "2010-08-01"
+        },
+        {
+            "id": 6,
+            "title": "Inception",
+            "description": "This is the description of the item",
+            "trailer": "https://www.youtube.com/embed/8hP9D6kZseM",
+            "image": "images/inception-2010-scifi.jpg",
+            "genres": [
+                { "label": "Action" },
+                { "label": "Adventure" },
+                { "label": "Family" }
+            ],
+            "price": 15,
+            "date": "2010-08-01"
+        },
+        {
+            "id": 7,
+            "title": "Inception",
+            "description": "This is the description of the item",
+            "trailer": "https://www.youtube.com/embed/8hP9D6kZseM",
+            "image": "images/inception-2010-scifi.jpg",
+            "genres": [
+                { "label": "Action" },
+                { "label": "Adventure" },
+                { "label": "Family" }
+            ],
+            "price": 15,
+            "date": "2010-08-01"
+        },
+        {
+            "id": 8,
+            "title": "Shutter Island",
+            "description": "In 1954, a U.S. Marshal investigates the disappearance of a murderer, who escaped from a hospital for the criminally insane.",
+            "trailer": "https://www.youtube.com/embed/5iaYLCiq5RM",
+            "image": "images/shutterisland-2010-thriller.jpg",
+            "genres": [
+                { "label": "Mystery" },
+                { "label": "Thriller" }
+            ],
+            "price": 15,
+            "date": "2010-02-19"
+        },
+        {
+            "id": 9,
+            "title": "The English Patient",
+            "description": "At the close of WWII, a young nurse tends to a badly-burned plane crash victim. His past is shown in flashbacks, revealing an involvement in a fateful love affair.",
+            "trailer": "https://www.youtube.com/embed/Xk_LRcOFT0c",
+            "image": "images/lepatientanglais-1996-dramatique.jpg",
+            "genres": [
+                { "label": "Drama" },
+                { "label": "Romance" },
+                { "label": "War" }
+            ],
+            "price": 15,
+            "date": "1996-12-06"
+        },
+        {
+            "id": 10,
+            "title": "The two towers",
+            "description": "While Frodo and Sam edge closer to Mordor with the help of the shifty Gollum, the divided fellowship makes a stand against Sauron's new ally, Saruman, and his hordes of Isengard.",
+            "trailer": "https://www.youtube.com/embed/LbfMDwc4azU",
+            "image": "images/lesdeuxtours-2002-aventure.jpg",
+            "genres": [
+                { "label": "Drama" },
+                { "label": "Adventure" },
+                { "label": "Fantasy" }
+            ],
+            "price": 15,
+            "date": "2002-12-18"
+        },
+        {
+            "id": 11,
+            "title": "Seven",
+            "description": "Two detectives, a rookie and a veteran, hunt a serial killer who uses the seven deadly sins as his motives.",
+            "trailer": "https://www.youtube.com/embed/znmZoVkCjpI",
+            "image": "images/seven-1995-thriller.jpg",
+            "genres": [
+                { "label": "Thriller" },
+                { "label": "Crime" },
+                { "label": "Drama" }
+            ],
+            "price": 15,
+            "date": "1995-09-22"
+        },
+        {
+            "id": 12,
+            "title": "Inception",
+            "description": "This is the description of the item",
+            "trailer": "https://www.youtube.com/embed/8hP9D6kZseM",
+            "image": "images/inception-2010-scifi.jpg",
+            "genres": [
+                { "label": "Action" },
+                { "label": "Adventure" },
+                { "label": "Family" }
+            ],
+            "price": 15,
+            "date": "2010-08-01"
+        },
+        {
+            "id": 13,
+            "title": "Inception",
+            "description": "This is the description of the item",
+            "trailer": "https://www.youtube.com/embed/8hP9D6kZseM",
+            "image": "images/inception-2010-scifi.jpg",
+            "genres": [
+                { "label": "Action" },
+                { "label": "Adventure" },
+                { "label": "Family" }
+            ],
+            "price": 15,
+            "date": "2010-08-01"
+        },
+        {
+            "id": 14,
+            "title": "Inception",
+            "description": "This is the description of the item",
+            "trailer": "https://www.youtube.com/embed/8hP9D6kZseM",
+            "image": "images/inception-2010-scifi.jpg",
+            "genres": [
+                { "label": "Action" },
+                { "label": "Adventure" },
+                { "label": "Family" }
+            ],
+            "price": 15,
+            "date": "2010-08-01"
+        },
+        {
+            "id": 15,
+            "title": "Inception",
+            "description": "This is the description of the item",
+            "trailer": "https://www.youtube.com/embed/8hP9D6kZseM",
+            "image": "images/inception-2010-scifi.jpg",
+            "genres": [
+                { "label": "Action" },
+                { "label": "Adventure" },
+                { "label": "Family" }
+            ],
+            "price": 15,
+            "date": "2010-08-01"
+        },
+        {
+            "id": 16,
+            "title": "Intouchables",
+            "description": "After he becomes a quadriplegic from a paragliding accident, an aristocrat hires a young man from the projects to be his caregiver.",
+            "trailer": "https://www.youtube.com/embed/34WIbmXkewU",
+            "image": "images/intouchables-2011-comedie.jpg",
+            "genres": [
+                { "label": "Biography" },
+                { "label": "Comedy" },
+                { "label": "Family" }
+            ],
+            "price": 15,
+            "date": "2011-11-02"
+        },
+        {
+            "id": 17,
+            "title": "The Empire Strikes Back",
+            "description": "After the rebels are brutally overpowered by the Empire on the ice planet Hoth, Luke Skywalker begins Jedi training with Yoda, while his friends are pursued by Darth Vader.",
+            "trailer": "https://www.youtube.com/embed/JNwNXF9Y6kY",
+            "image": "images/starwarsempire-1980-scifi.jpg",
+            "genres": [
+                { "label": "Action" },
+                { "label": "Adventure" },
+                { "label": "Fantasy" }
+            ],
+            "price": 15,
+            "date": "1980-06-20"
+        },
+        {
+            "id": 18,
+            "title": "The neon demon",
+            "description": "The sixteen year-old aspiring model Jesse arrives in Los Angeles expecting to be a successful model.",
+            "trailer": "https://www.youtube.com/embed/cipOTUO0CmU",
+            "image": "images/neon-demon.jpg",
+            "genres": [
+                { "label": "Horror" },
+                { "label": "Thriller" }
+            ],
+            "price": 15,
+            "date": "2016-06-24"
+        },
+        {
+            "id": 19,
+            "title": "Django Unchained",
+            "description": "With the help of a German bounty hunter, a freed slave sets out to rescue his wife from a brutal Mississippi plantation owner.",
+            "trailer": "https://www.youtube.com/embed/eUdM9vrCbow",
+            "image": "images/django.jpg",
+            "genres": [
+                { "label": "Drama" },
+                { "label": "Adventure" },
+                { "label": "Western" }
+            ],
+            "price": 15,
+            "date": "2012-12-25"
+        },
+        {
+            "id": 20,
+            "title": "Inception",
+            "description": "This is the description of the item",
+            "trailer": "https://www.youtube.com/embed/8hP9D6kZseM",
+            "image": "images/inception-2010-scifi.jpg",
+            "genres": [
+                { "label": "Action" },
+                { "label": "Adventure" },
+                { "label": "Family" }
+            ],
+            "price": 15,
+            "date": "2010-08-01"
+        },
+        {
+            "id": 21,
+            "title": "Inception",
+            "description": "This is the description of the item",
+            "trailer": "https://www.youtube.com/embed/8hP9D6kZseM",
+            "image": "images/inception-2010-scifi.jpg",
+            "genres": [
+                { "label": "Action" },
+                { "label": "Adventure" },
+                { "label": "Family" }
+            ],
+            "price": 15,
+            "date": "2010-08-01"
+        },
+        {
+            "id": 22,
+            "title": "Inception",
+            "description": "This is the description of the item",
+            "trailer": "https://www.youtube.com/embed/8hP9D6kZseM",
+            "image": "images/inception-2010-scifi.jpg",
+            "genres": [
+                { "label": "Action" },
+                { "label": "Adventure" },
+                { "label": "Family" }
+            ],
+            "price": 15,
+            "date": "2010-08-01"
+        },
+        {
+            "id": 23,
+            "title": "Inception",
+            "description": "This is the description of the item",
+            "trailer": "https://www.youtube.com/embed/8hP9D6kZseM",
+            "image": "images/inception-2010-scifi.jpg",
+            "genres": [
+                { "label": "Action" },
+                { "label": "Adventure" },
+                { "label": "Family" }
+            ],
+            "price": 15,
+            "date": "2010-08-01"
+        }
+    ]
+}
