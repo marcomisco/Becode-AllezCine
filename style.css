@@ -415,7 +415,12 @@ Table of Contents
         font-size: 1.5em;
         /* width: 36px; */
         height: 24px;
-        ;
+        cursor: pointer;
+    }
+    
+    #shopMovies #previousNext .isDisabled {
+        cursor: default;
+        background-color: #a3a3a3;
     }
     
     #shopMovies #previousNext a i {
