@@ -71,45 +71,47 @@
         },
         {
             "id": 5,
-            "title": "Inception",
-            "description": "This is the description of the item",
-            "trailer": "https://www.youtube.com/embed/8hP9D6kZseM",
-            "image": "images/inception-2010-scifi.jpg",
+            "title": "Deadpool",
+            "description": "A fast-talking mercenary with a morbid sense of humor is subjected to a rogue experiment that leaves him with accelerated healing powers and a quest for revenge.",
+            "trailer": "https://www.youtube.com/embed/ONHBaC-pfsk",
+            "image": "images/deadpool.jpg",
+            "banner": "images/deadpool-banner.jpg",
             "genres": [
                 { "label": "Action" },
                 { "label": "Adventure" },
-                { "label": "Family" }
+                { "label": "Comedy" }
             ],
             "price": 15,
-            "date": "2010-08-01"
+            "date": "2016-02-12"
         },
         {
             "id": 6,
-            "title": "Inception",
-            "description": "This is the description of the item",
-            "trailer": "https://www.youtube.com/embed/8hP9D6kZseM",
-            "image": "images/inception-2010-scifi.jpg",
+            "title": "Dark Knight Rises",
+            "description": "Eight years after the Joker's reign of anarchy, Batman, with the help of the enigmatic Catwoman, is forced from his exile to save Gotham City, now on the edge of total annihilation, from the brutal guerrilla terrorist Bane.",
+            "trailer": "https://www.youtube.com/embed/GokKUqLcvD8",
+            "image": "images/dark knight rises.jpg",
+            "banner": "images/dark-knight-rises-banner.jpg",
             "genres": [
                 { "label": "Action" },
-                { "label": "Adventure" },
-                { "label": "Family" }
+                { "label": "Thriller" }
             ],
             "price": 15,
-            "date": "2010-08-01"
+            "date": "2012-07-20"
         },
         {
             "id": 7,
             "title": "Inception",
-            "description": "This is the description of the item",
+            "description": "A thief, who steals corporate secrets through the use of dream-sharing technology, is given the inverse task of planting an idea into the mind of a CEO.",
             "trailer": "https://www.youtube.com/embed/8hP9D6kZseM",
             "image": "images/inception-2010-scifi.jpg",
+            "banner": "images/inception-banner.jpg",
             "genres": [
                 { "label": "Action" },
                 { "label": "Adventure" },
-                { "label": "Family" }
+                { "label": "Sci-Fi" }
             ],
             "price": 15,
-            "date": "2010-08-01"
+            "date": "2010-07-16"
         },
         {
             "id": 8,

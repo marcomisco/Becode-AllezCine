@@ -5,6 +5,60 @@ $(document).ready(function() {
         $('#cookiesAlert').css('display', 'none');
     });
 
+    // Carousel
+    $('#carousel').carousel({
+        interval: 3000,
+        ride: true
+    })
+
+    $('#btnCarouselTrailer').on('click', function() {
+        $('#modalCarousel').modal('show');
+    });
+    $('#btnCloseModalCarousel').on('click', function() {
+        $('#modalCarousel').modal('hide');
+    });
+    // $('#carousel').bind('slide.bs.carousel', function(e) {
+    $('#carousel').bind('slid.bs.carousel', function(e) {
+        console.log('slide event!');
+        let test = $('#carousel .carousel-item.active').attr('data-id');
+        console.log(parseInt(test));
+        fillModalCarousel(parseInt(test));
+    });
+
+    function fillModalCarousel(x) {
+        $.getJSON("movies.json", function(data) {
+            let item = data.shopMovies[x];
+            // console.log(data.shopMovies[parseInt(test) + 1]);
+            $('#modalCarousel .modal-title').text(item.title);
+            $('#modalCarousel .modal-body iframe').attr('src', item.trailer);
+            $('#modalCarousel .modal-body p').text(item.description);
+        });
+    }
+    fillModalCarousel(5);
+    // $('#modalCarousel').modal('toggle');
+    function initiateCarousel() {
+        $.getJSON("movies.json", function(data) {
+            let banners = [];
+            $.each(data.shopMovies, function(i, item) {
+                if (i > 4 && i < 8) {
+                    banners.push(item);
+                }
+            });
+            console.log(banners);
+            $.each(banners, function(i, banner) {
+                if (i === 0) {
+                    bannerText = '<div class="carousel-item active" data-id="' + banner.id + '">';
+                } else {
+                    bannerText = '<div class="carousel-item" data-id="' + banner.id + '">';
+                }
+                bannerText += '<img class="d-block w-100" src="' + banner.banner + '" alt="' + banner.title + ' banner">';
+                bannerText += '</div>';
+                $('#carousel .carousel-inner').append(bannerText);
+            });
+        });
+    }
+    initiateCarousel();
+
     // Age controller
     // let age = prompt('Please enter your age ?\nYou must be 18 or older to enter our website. If you are younger, you will be redirected to the IMDB website.')
     // if (parseInt(age) < 18) {
@@ -41,7 +95,7 @@ $(document).ready(function() {
         // var newContent = document.createTextNode('<i class="fas fa-arrow-alt-up"></i>');
         // var newContent = document.createTextNode('');
         // add the text node to the newly created div
-        newBackToTop.setAttribute("href", "#mainHeader");
+        newBackToTop.setAttribute("href", "#headerContent");
         newBackToTop.setAttribute("id", "backToTop");
         // newBackToTop.innerHTML = '<i class="fas fa-arrow-alt-up"></i>';
         newI.classList.add("fas", "fa-arrow-alt-up");
@@ -60,7 +114,7 @@ $(document).ready(function() {
     // Display contact form info in a pop-up
 
     /* Scroll to anchors */
-    $('a[href*="#"]').on('click', function(e) {
+    $('#mainHeader a[href*="#"], #mainFooter a[href*="#"]').on('click', function(e) {
         e.preventDefault();
         e.stopPropagation();
         var target = $(this).attr('href');
@@ -278,36 +332,36 @@ function contactInfo() {
 }
 
 
- // Get the modal
- var modal = document.getElementById('myModal');
-        
- // Get the button that opens the modal
- var btn = document.getElementById("myBtn");
- 
- // Get the <span> element that closes the modal
- var span = document.getElementsByClassName("close")[0];
- 
- // When the user clicks the button, open the modal 
- btn.onclick = function() {
-     modal.style.display = "block";
- }
- 
- // When the user clicks on <span> (x), close the modal
- span.onclick = function() {
-     modal.style.display = "none";
- }
+// Get the modal
+var modal = document.getElementById('myModal');
 
- 
- //outside of the modal, close it
- window.onclick = function(event) {
-     if (event.target == modal) {
-         modal.style.display = "none";
-     }
- }
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+
+//outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
 
 // Get the modal
 var modal2 = document.getElementById('myModal2');
-        
+
 // Get the button that opens the modal
 var btn2 = document.getElementById("myBtn2");
 
@@ -325,82 +379,81 @@ span2.onclick = function() {
 }
 
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event2) {
-    if (event.target == modal2) {
-        modal2.style.display = "none";
+// window.onclick = function(event2) {
+//     if (event.target == modal2) {
+//         modal2.style.display = "none";
+//     }
+// }
+
+
+
+
+//boutonvoirplus
+
+function togglediv(bouton, id) {
+    var div = document.getElementById(id);
+    if (div.style.display == "none") {
+        div.style.display = "block";
+        bouton.innerHTML = "Less Movies";
+    } else {
+        div.style.display = "none";
+        bouton.innerHTML = "More Movies";
     }
 }
 
+function togglediv2(bouton, id) {
+    var div = document.getElementById(id);
+    if (div.style.display == "none") {
+        div.style.display = "block";
+        bouton.innerHTML = "Less Series";
+    } else {
+        div.style.display = "none";
+        bouton.innerHTML = "More Series";
+    }
+}
+//triage
+filterSelection("all")
 
-
-
- //boutonvoirplus
-
-function togglediv(bouton, id) { 
-  var div = document.getElementById(id); 
-  if(div.style.display=="none") { 
-    div.style.display = "block"; 
-    bouton.innerHTML = "Less Movies"; 
-  } else { 
-    div.style.display = "none"; 
-    bouton.innerHTML = "More Movies"; 
-  }
+function filterSelection(c) {
+    var x, i;
+    x = document.getElementsByClassName("filterDiv");
+    if (c == "all") c = "";
+    for (i = 0; i < x.length; i++) {
+        RemoveClass(x[i], "show");
+        if (x[i].className.indexOf(c) > -1) AddClass(x[i], "show");
+    }
 }
 
-function togglediv2(bouton, id) { 
-    var div = document.getElementById(id); 
-    if(div.style.display=="none") { 
-      div.style.display = "block"; 
-      bouton.innerHTML = "Less Series"; 
-    } else { 
-      div.style.display = "none"; 
-      bouton.innerHTML = "More Series"; 
+function AddClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+        if (arr1.indexOf(arr2[i]) == -1) {
+            element.className += " " + arr2[i];
+        }
     }
-  }
-  //triage
-  filterSelection("all")
+}
 
-  function filterSelection(c) {
-      var x, i;
-      x = document.getElementsByClassName("filterDiv");
-      if (c == "all") c = "";
-      for (i = 0; i < x.length; i++) {
-          RemoveClass(x[i], "show");
-          if (x[i].className.indexOf(c) > -1) AddClass(x[i], "show");
-      }
-  }
+function RemoveClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+        while (arr1.indexOf(arr2[i]) > -1) {
+            arr1.splice(arr1.indexOf(arr2[i]), 1);
+        }
+    }
+    element.className = arr1.join(" ");
+}
 
-  function AddClass(element, name) {
-      var i, arr1, arr2;
-      arr1 = element.className.split(" ");
-      arr2 = name.split(" ");
-      for (i = 0; i < arr2.length; i++) {
-          if (arr1.indexOf(arr2[i]) == -1) {
-              element.className += " " + arr2[i];
-          }
-      }
-  }
-
-  function RemoveClass(element, name) {
-      var i, arr1, arr2;
-      arr1 = element.className.split(" ");
-      arr2 = name.split(" ");
-      for (i = 0; i < arr2.length; i++) {
-          while (arr1.indexOf(arr2[i]) > -1) {
-              arr1.splice(arr1.indexOf(arr2[i]), 1);
-          }
-      }
-      element.className = arr1.join(" ");
-  }
-
-  // Add active class 
-  var btnContainer = document.getElementById("myBtnContainer");
-  var btns = btnContainer.getElementsByClassName("btn");
-  for (var i = 0; i < btns.length; i++) {
-      btns[i].addEventListener("click", function () {
-          var current = document.getElementsByClassName("active");
-          current[0].className = current[0].className.replace(" active", "");
-          this.className += " active";
-      });
-  }
-
+// Add active class 
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function() {
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+    });
+}
