@@ -81,6 +81,11 @@
                 { "label": "Adventure" },
                 { "label": "Comedy" }
             ],
+            "actors": [
+                { "name": "  Ryan Reynolds" },
+                { "name": "Morena Baccarin" },
+                { "name": "T.J. Miller" }
+            ],
             "price": 15,
             "date": "2016-02-12"
         },
@@ -94,6 +99,11 @@
             "genres": [
                 { "label": "Action" },
                 { "label": "Thriller" }
+            ],
+            "actors": [
+                { "name": "  Christian Bale" },
+                { "name": "Anne Hathaway" },
+                { "name": "Tom Hardy" }
             ],
             "price": 15,
             "date": "2012-07-20"
@@ -109,6 +119,12 @@
                 { "label": "Action" },
                 { "label": "Adventure" },
                 { "label": "Sci-Fi" }
+            ],
+            "actors": [
+                { "name": " Leonardo DiCaprio" },
+                { "name": "Joseph Gordon-Levitt" },
+                { "name": "Ellen Page" },
+                { "name": "Tom Hardy" }
             ],
             "price": 15,
             "date": "2010-07-16"

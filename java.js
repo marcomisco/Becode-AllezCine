@@ -31,7 +31,17 @@ $(document).ready(function() {
             // console.log(data.shopMovies[parseInt(test) + 1]);
             $('#modalCarousel .modal-title').text(item.title);
             $('#modalCarousel .modal-body iframe').attr('src', item.trailer);
-            $('#modalCarousel .modal-body p').text(item.description);
+            $('#modalCarousel .modal-body #modalStory').text(item.description);
+            actorsList = "";
+            item.actors.forEach((val, key, arr) => {
+                if (!Object.is(item.actors.length - 1, key)) {
+                    actorsList += val.name;
+                    actorsList += " | ";
+                } else {
+                    actorsList += val.name;
+                }
+            });
+            $('#modalCarousel .modal-body #modalActors').text(actorsList);
         });
     }
     fillModalCarousel(5);
