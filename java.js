@@ -25,49 +25,84 @@ $(document).ready(function() {
         fillModalCarousel(parseInt(test));
     });
 
-    function fillModalCarousel(x) {
-        $.getJSON("movies.json", function(data) {
-            let item = data.shopMovies[x];
-            // console.log(data.shopMovies[parseInt(test) + 1]);
-            $('#modalCarousel .modal-title').text(item.title);
-            $('#modalCarousel .modal-body iframe').attr('src', item.trailer);
-            $('#modalCarousel .modal-body #modalStory').text(item.description);
-            actorsList = "";
-            item.actors.forEach((val, key, arr) => {
-                if (!Object.is(item.actors.length - 1, key)) {
-                    actorsList += val.name;
-                    actorsList += " | ";
-                } else {
-                    actorsList += val.name;
-                }
-            });
-            $('#modalCarousel .modal-body #modalActors').text(actorsList);
-        });
-    }
-    fillModalCarousel(5);
-    // $('#modalCarousel').modal('toggle');
-    function initiateCarousel() {
-        $.getJSON("movies.json", function(data) {
-            let banners = [];
-            $.each(data.shopMovies, function(i, item) {
-                if (i > 4 && i < 8) {
-                    banners.push(item);
-                }
-            });
-            console.log(banners);
-            $.each(banners, function(i, banner) {
-                if (i === 0) {
-                    bannerText = '<div class="carousel-item active" data-id="' + banner.id + '">';
-                } else {
-                    bannerText = '<div class="carousel-item" data-id="' + banner.id + '">';
-                }
-                bannerText += '<img class="d-block w-100" src="' + banner.banner + '" alt="' + banner.title + ' banner">';
-                bannerText += '</div>';
-                $('#carousel .carousel-inner').append(bannerText);
-            });
-        });
-    }
-    initiateCarousel();
+    // function fillModalCarousel(x) {
+    //     $.getJSON("movies.json", function(data) {
+    //         let item = data.shopMovies[x];
+    //         $('#modalCarousel .modal-title').text(item.title);
+    //         $('#modalCarousel .modal-body iframe').attr('src', item.trailer);
+    //         $('#modalCarousel .modal-body iframe').attr('title', item.title);
+    //         $('#modalCarousel .modal-body #modalStory').text(item.description);
+    //         actorsList = "";
+    //         item.actors.forEach((val, key, arr) => {
+    //             if (!Object.is(item.actors.length - 1, key)) {
+    //                 actorsList += val.name;
+    //                 actorsList += " | ";
+    //             } else {
+    //                 actorsList += val.name;
+    //             }
+    //         });
+    //         $('#modalCarousel .modal-body #modalActors').text(actorsList);
+    //     });
+    // }
+    // fillModalCarousel(5);
+    // function initiateCarousel() {
+    //     $.getJSON("movies.json", function(data) {
+    //         let banners = [];
+    //         $.each(data.shopMovies, function(i, item) {
+    //             if (i > 4 && i < 8) {
+    //                 banners.push(item);
+    //             }
+    //         });
+    //         console.log(banners);
+    //         $.each(banners, function(i, banner) {
+    //             if (i === 0) {
+    //                 bannerText = '<div class="carousel-item active" data-id="' + banner.id + '">';
+    //             } else {
+    //                 bannerText = '<div class="carousel-item" data-id="' + banner.id + '">';
+    //             }
+    //             bannerText += '<img class="d-block w-100" src="' + banner.banner + '" alt="' + banner.title + ' banner">';
+    //             bannerText += '</div>';
+    //             $('#carousel .carousel-inner').append(bannerText);
+    //         });
+    //     });
+    // }
+    // initiateCarousel();
+
+    // // Modal Featured Top
+    // function getRandomInt(max) {
+    //     return Math.floor(Math.random() * Math.floor(max));
+    // }
+
+    // function fillFeaturedTop() {
+    //     $.getJSON("movies.json", function(data) {
+    //         let nbrMovies = 0;
+    //         let movies = [];
+    //         // let five = [];
+    //         $.each(data.shopMovies, function(i, item) {
+    //             nbrMovies++;
+    //             movies.push(item);
+    //         });
+    //         for (let i = 0; i < 5; i++) {
+    //             nbrMovies--;
+    //             // five.push(movies[nbrMovies]);
+    //             let actual = movies[nbrMovies];
+    //             let movieDiv = '<div class="col" data-id="' + actual.id + '">';
+    //             movieDiv += '<a onclick="fillModalFromTop(' + actual.id + ')">';
+    //             movieDiv += '<img src="' + actual.image + '" alt="' + actual.title + ' - Poster">';
+    //             movieDiv += '<h5>' + actual.title + '</h5>';
+    //             movieDiv += '<p>' + actual.date + '<span>' + actual.genres[0].label + '</span></p>';
+    //             movieDiv += '</a>';
+    //             movieDiv += '</div>';
+    //             $('#featuredTop .row').append(movieDiv);
+    //         }
+    //     });
+    // }
+    // fillFeaturedTop()
+
+    // function fillModalFromTop(x) {
+    //     fillModalCarousel(x);
+    //     $('#modalCarousel').modal('show');
+    // }
 
     // Age controller
     // let age = prompt('Please enter your age ?\nYou must be 18 or older to enter our website. If you are younger, you will be redirected to the IMDB website.')
@@ -84,11 +119,11 @@ $(document).ready(function() {
         while (isNaN(age) || age < 18) {
             alert(age);
 
-            if (isNaN(age)) {
+            if (isNaN(age) || age === "") {
                 age = prompt("Please enter your age !");
             }
 
-            if (age < 18) {
+            if (age < 18 && age !== "") {
                 window.location.href = "https://www.imdb.com";
                 break;
             }
@@ -238,6 +273,86 @@ $(document).ready(function() {
     // });
 });
 
+function fillModalCarousel(x) {
+    $.getJSON("movies.json", function(data) {
+        let item = data.shopMovies[x];
+        $('#modalCarousel .modal-title').text(item.title);
+        $('#modalCarousel .modal-body iframe').attr('src', item.trailer);
+        $('#modalCarousel .modal-body iframe').attr('title', item.title);
+        $('#modalCarousel .modal-body #modalStory').text(item.description);
+        actorsList = "";
+        item.actors.forEach((val, key, arr) => {
+            if (!Object.is(item.actors.length - 1, key)) {
+                actorsList += val.name;
+                actorsList += " | ";
+            } else {
+                actorsList += val.name;
+            }
+        });
+        $('#modalCarousel .modal-body #modalActors').text(actorsList);
+    });
+}
+fillModalCarousel(5);
+
+function initiateCarousel() {
+    $.getJSON("movies.json", function(data) {
+        let banners = [];
+        $.each(data.shopMovies, function(i, item) {
+            if (i > 4 && i < 8) {
+                banners.push(item);
+            }
+        });
+        console.log(banners);
+        $.each(banners, function(i, banner) {
+            if (i === 0) {
+                bannerText = '<div class="carousel-item active" data-id="' + banner.id + '">';
+            } else {
+                bannerText = '<div class="carousel-item" data-id="' + banner.id + '">';
+            }
+            bannerText += '<img class="d-block w-100" src="' + banner.banner + '" alt="' + banner.title + ' banner">';
+            bannerText += '</div>';
+            $('#carousel .carousel-inner').append(bannerText);
+        });
+    });
+}
+initiateCarousel();
+
+// Modal Featured Top
+function getRandomInt(max) {
+    return Math.floor(Math.random() * Math.floor(max));
+}
+
+function fillFeaturedTop() {
+    $.getJSON("movies.json", function(data) {
+        let nbrMovies = 0;
+        let movies = [];
+        // let five = [];
+        $.each(data.shopMovies, function(i, item) {
+            nbrMovies++;
+            movies.push(item);
+        });
+        for (let i = 0; i < 5; i++) {
+            nbrMovies--;
+            // five.push(movies[nbrMovies]);
+            let actual = movies[nbrMovies];
+            let movieDiv = '<div class="col" data-id="' + actual.id + '">';
+            movieDiv += '<a onclick="fillModalFromTop(' + actual.id + ')">';
+            movieDiv += '<img src="' + actual.image + '" alt="' + actual.title + ' - Poster">';
+            movieDiv += '<h5>' + actual.title + '</h5>';
+            movieDiv += '<p>' + actual.date + '<span>' + actual.genres[0].label + '</span></p>';
+            movieDiv += '</a>';
+            movieDiv += '</div>';
+            $('#featuredTop .row').append(movieDiv);
+        }
+    });
+}
+fillFeaturedTop()
+
+function fillModalFromTop(x) {
+    fillModalCarousel(x);
+    $('#modalCarousel').modal('show');
+}
+
 function shopMoviesAjax(x) {
     // alert('test');
     // shopNbrPages = 0;
@@ -307,6 +422,7 @@ function shopTrailer(x) {
         let movie = data.shopMovies[x];
         console.log(movie.title);
         $('#movieTrailer iframe').attr('src', movie.trailer);
+        $('#movieTrailer iframe').attr('title', movie.title);
         $('#movieTrailer .trailerTitle').text(movie.title);
         $('#movieTrailer .trailerStory').text(movie.description);
         $('#movieTrailer .trailerDate').text(movie.date);

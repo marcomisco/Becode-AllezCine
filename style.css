@@ -472,6 +472,7 @@ Table of Contents
         margin-bottom: 5px;
         /* width: intrinsic; */
         width: fit-content;
+        width: -moz-fit-content;
     }
     
     #socialRibbons .socialItem a span {
@@ -493,9 +494,9 @@ Table of Contents
             display: inline-block;
         }
     }
-    /* #socialRibbons .socialItem:hover a span { */
     
-    #socialRibbons .socialItem a:active span {
+    #socialRibbons .socialItem:hover a span {
+        /* #socialRibbons .socialItem a:active span { */
         /* #socialRibbons .socialItem:active a span { */
         /* width: 100px; */
         /* animation: displayRibbon 1s 6000s; */
@@ -516,11 +517,10 @@ Table of Contents
         position: relative;
         bottom: 1px;
     }
-    
-    #socialRibbons .socialItem:focus a span {
+    /* #socialRibbons .socialItem:focus a span {
         width: 100px;
         display: inline-block;
-    }
+    } */
     /* #socialRibbons .socialItem:hover>a {
         padding-left: 100px;
     } */
@@ -534,6 +534,7 @@ Table of Contents
     
     #socialRibbons #ribbonFacebook {
         background-color: #406092;
+        display: inline-block;
     }
     
     #socialRibbons #ribbonDribble {
@@ -797,6 +798,12 @@ Table of Contents
         top: 100px; */
         margin-bottom: -100px;
         /* background-color: #fff; */
+    }
+    
+    #contact #map {
+        width: 100%;
+        height: 400px;
+        margin-bottom: 30px;
     }
     
     #contact form {

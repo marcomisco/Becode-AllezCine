@@ -1,0 +1,18 @@
+          {
+              "short_name": "Allez!",
+              "name": "AllezCine!",
+              "display": "standalone",
+              "background_color": "#fff",
+              "theme_color": "#000",
+              "icons": [{
+                      "src": "https://tgribaumont.github.io/becode-bootstrap-restaurant/images/logo.png",
+                      "type": "image/png",
+                      "sizes": "192x192"
+                  },
+                  {
+                      "src": "https://tgribaumont.github.io/becode-bootstrap-restaurant/images/logo.png",
+                      "type": "image/png",
+                      "sizes": "512x512"
+                  }
+              ]
+          }
