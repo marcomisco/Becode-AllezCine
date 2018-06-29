@@ -376,7 +376,7 @@ function shopMoviesAjax(x) {
             }
         });
         $.each(movies, function(i, movie) {
-            itemText = "<div class='col-3'>";
+            itemText = "<div class='col-6 col-md-3'>";
             itemText += "<a onclick='shopTrailer(" + movie.id + ")'>";
             itemText += "<img src='" + movie.image + "' alt='Movie - Poster'>";
             itemText += "<h5>Movie title</h5>";

@@ -604,25 +604,30 @@ Table of Contents
     }
     
     .featuredCategories .col,
+    .featuredCategories .col-4,
     .featuredCategories .col-2 {
         padding-right: 0;
     }
     
     .featuredCategories .col:last-child,
+    .featuredCategories .col_4:last-child,
     .featuredCategories .col-2:last-child {
         /* padding-right: 15px; */
     }
     
     .featuredCategories .col h5,
+    .featuredCategories .col-4 h5,
     .featuredCategories .col-2 h5 {
         text-align: center;
         margin: 0;
         font-size: 1em;
         /* line-height: 3em; */
         padding: 0.6em 0 0;
+        color: #0d0d0d;
     }
     
     .featuredCategories .col img,
+    .featuredCategories .col-4 img,
     .featuredCategories .col-2 img {
         width: 100%;
     }
@@ -1064,18 +1069,72 @@ Table of Contents
             max-width: 1000px;
         }
     }
-    @media (max-width:767px){
-        .nav + ul.list-inline  {display: none;}
-        .list-inline > li{
+    
+    @media (max-width:767px) {
+        .nav+ul.list-inline {
+            display: none;
+        }
+        .list-inline>li {
             display: block;
         }
-       .nav.men-open .list-inline > li{margin-bottom: 5px;}
-        .menu-bar-inner > ul > li > a{display: block;}
-        .nav{display: table;width: 100%;padding: 5px 0;}
-        .nav > div{float: right;}
-        .nav{text-align: center;}
-        .recherche{width:40%;}
-        .titre3{width: 80%;font-size: 150%;margin: 8px;text-align:center;}
-        .titre2{display: table;width: 100%;font-size: 150%}
-        .dropdown{margin:25px; width: 80%;}
-    }  
+        .nav.men-open .list-inline>li {
+            margin-bottom: 5px;
+        }
+        .menu-bar-inner>ul>li>a {
+            display: block;
+        }
+        .nav {
+            display: table;
+            width: 100%;
+            padding: 5px 0;
+        }
+        .nav>div {
+            float: right;
+        }
+        .nav {
+            text-align: center;
+        }
+        .recherche {
+            width: 40%;
+        }
+        .titre1 {
+            padding: 0;
+        }
+        .titre3 {
+            width: 80%;
+            font-size: 150%;
+            margin: 8px;
+            text-align: center;
+        }
+        .titre2 {
+            display: table;
+            width: 100%;
+            font-size: 150%
+        }
+        .dropdown {
+            margin: 0;
+            height: auto;
+            /* width: 80%; */
+            padding: 10px;
+        }
+        .botntrailer {
+            position: absolute;
+            top: 370px;
+            right: 40px;
+        }
+        #shopMovies #movieTrailer iframe {
+            height: 20%;
+        }
+    }
+    
+    @media (min-width: 576px) {
+        #shopMovies #movieTrailer .trailerInfo {
+            padding: 0 5px 5px;
+        }
+        #shopMovies #movieTrailer p {
+            width: 100%;
+        }
+        #shopMovies #movieTrailer span {
+            width: 100%;
+        }
+    }
