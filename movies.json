@@ -82,7 +82,7 @@
                 { "label": "Comedy" }
             ],
             "actors": [
-                { "name": "  Ryan Reynolds" },
+                { "name": "Ryan Reynolds" },
                 { "name": "Morena Baccarin" },
                 { "name": "T.J. Miller" }
             ],
@@ -101,7 +101,7 @@
                 { "label": "Thriller" }
             ],
             "actors": [
-                { "name": "  Christian Bale" },
+                { "name": "Christian Bale" },
                 { "name": "Anne Hathaway" },
                 { "name": "Tom Hardy" }
             ],
@@ -121,7 +121,7 @@
                 { "label": "Sci-Fi" }
             ],
             "actors": [
-                { "name": " Leonardo DiCaprio" },
+                { "name": "Leonardo DiCaprio" },
                 { "name": "Joseph Gordon-Levitt" },
                 { "name": "Ellen Page" },
                 { "name": "Tom Hardy" }
@@ -287,69 +287,98 @@
             "description": "With the help of a German bounty hunter, a freed slave sets out to rescue his wife from a brutal Mississippi plantation owner.",
             "trailer": "https://www.youtube.com/embed/eUdM9vrCbow",
             "image": "images/django.jpg",
+            "banner": "images/dark-knight-rises-banner.jpg",
             "genres": [
-                { "label": "Drama" },
                 { "label": "Adventure" },
-                { "label": "Western" }
+                { "label": "Drama" },
+                { "label": "Sci-Fi" }
+            ],
+            "actors": [
+                { "name": "Matt Damon" },
+                { "name": "Jessica Chastain" },
+                { "name": "Kristen Wiig" }
             ],
             "price": 15,
             "date": "2012-12-25"
         },
         {
             "id": 20,
-            "title": "Inception",
-            "description": "This is the description of the item",
-            "trailer": "https://www.youtube.com/embed/8hP9D6kZseM",
-            "image": "images/inception-2010-scifi.jpg",
+            "title": "Finding Forrester",
+            "description": "A young writing prodigy finds a mentor in a reclusive author.",
+            "trailer": "https://www.youtube.com/embed/OjO0QVuZcE8",
+            "image": "images/finding-forrester.jpg",
+            "banner": "images/finding-forrester-banner.jpg",
             "genres": [
-                { "label": "Action" },
-                { "label": "Adventure" },
-                { "label": "Family" }
+                { "label": "Drama" },
+                { "label": "Comedy" }
+            ],
+            "actors": [
+                { "name": "Sean Connery" },
+                { "name": "Rob Brown" },
+                { "name": "F. Murray Abraham" }
             ],
             "price": 15,
-            "date": "2010-08-01"
+            "date": "2001-01-12"
         },
         {
             "id": 21,
-            "title": "Inception",
-            "description": "This is the description of the item",
-            "trailer": "https://www.youtube.com/embed/8hP9D6kZseM",
-            "image": "images/inception-2010-scifi.jpg",
+            "title": "300",
+            "description": "King Leonidas of Sparta and a force of 300 men fight the Persians at Thermopylae in 480 B.C.",
+            "trailer": "https://www.youtube.com/embed/UrIbxk7idYA",
+            "image": "images/300.jpg",
+            "banner": "images/300-banner.jpg",
             "genres": [
                 { "label": "Action" },
-                { "label": "Adventure" },
-                { "label": "Family" }
+                { "label": "Fantasy" },
+                { "label": "War" }
+            ],
+            "actors": [
+                { "name": "Gerard Butler" },
+                { "name": "Lena Headey" },
+                { "name": "David Wenham" }
             ],
             "price": 15,
-            "date": "2010-08-01"
+            "date": "2007-03-09"
         },
         {
             "id": 22,
-            "title": "Inception",
-            "description": "This is the description of the item",
-            "trailer": "https://www.youtube.com/embed/8hP9D6kZseM",
-            "image": "images/inception-2010-scifi.jpg",
+            "title": "The Town",
+            "description": "As he plans his next job, a longtime thief tries to balance his feelings for a bank manager connected to one of his earlier heists, as well as the F.B.I. Agent looking to bring him and his crew down.",
+            "trailer": "https://www.youtube.com/embed/WcXt9aUMbBk",
+            "image": "images/the-town.jpg",
+            "banner": "images/the-town-banner.jpg",
             "genres": [
-                { "label": "Action" },
-                { "label": "Adventure" },
-                { "label": "Family" }
+                { "label": "Crime" },
+                { "label": "Drama" },
+                { "label": "Thriller" }
+            ],
+            "actors": [
+                { "name": "Ben Affleck" },
+                { "name": "Rebecca Hall" },
+                { "name": "Jon Hamm" }
             ],
             "price": 15,
-            "date": "2010-08-01"
+            "date": "2010-09-17"
         },
         {
             "id": 23,
-            "title": "Inception",
-            "description": "This is the description of the item",
-            "trailer": "https://www.youtube.com/embed/8hP9D6kZseM",
-            "image": "images/inception-2010-scifi.jpg",
+            "title": "The Martian",
+            "description": "An astronaut becomes stranded on Mars after his team assume him dead, and must rely on his ingenuity to find a way to signal to Earth that he is alive.",
+            "trailer": "https://www.youtube.com/embed/ej3ioOneTy8",
+            "image": "images/the-martian.jpg",
+            "banner": "images/the-martian-banner.jpg",
             "genres": [
-                { "label": "Action" },
                 { "label": "Adventure" },
-                { "label": "Family" }
+                { "label": "Drama" },
+                { "label": "Sci-Fi" }
+            ],
+            "actors": [
+                { "name": "Matt Damon" },
+                { "name": "Jessica Chastain" },
+                { "name": "Kristen Wiig" }
             ],
             "price": 15,
-            "date": "2010-08-01"
+            "date": "2015-10-02"
         }
     ]
 }

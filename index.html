@@ -14,6 +14,7 @@
     <!-- <script src="java.js"></script> -->
     <link rel="stylesheet" href="style.css">
     <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/png" href="images/map-marker.png">
     <title>AllezCine!</title>
 </head>
 
@@ -322,7 +323,7 @@
                 <div class="col-2">
                     <div class="filterDiv cars">
                         <a href="">
-                            <img src="images/ghostbusters.png" alt="Movie - Poster">
+                            <img src="images/ghostbusters.jpg" alt="Movie - Poster">
                             <h5>Movie title</h5>
                             <p>2016</p>
                         </a>
@@ -831,16 +832,16 @@
                 <h4>Latest movies</h4>
                 <ul>
                     <li>
-                        <a href=""><img src="images/300.jpg" alt="Movie - Title - Poster"><span>300</span></a>
+                        <a href=""><img src="images/300-horiz.jpg" alt="Movie - Title - Poster"><span>300</span></a>
                     </li>
                     <li>
-                        <a href=""><img src="images/theperks.jpg" alt="Movie - Title - Poster"><span>The perks of being a wallpaper</span></a>
+                        <a href=""><img src="images/the-perks-horiz.jpg" alt="Movie - Title - Poster"><span>The perks of being a wallpaper</span></a>
                     </li>
                     <li>
-                        <a href=""><img src="images/troy.jpg" alt="Movie - Title - Poster"><span>Troy</span></a>
+                        <a href=""><img src="images/troy-horiz.jpg" alt="Movie - Title - Poster"><span>Troy</span></a>
                     </li>
                     <li>
-                        <a href=""><img src="images/finding-forrester-1.jpg" alt="Movie - Title - Poster"><span>Finding Forrester</span></a>
+                        <a href=""><img src="images/finding-forrester-horiz.jpg" alt="Movie - Title - Poster"><span>Finding Forrester</span></a>
                     </li>
                 </ul>
             </div>
@@ -871,11 +872,11 @@
         <div id="footerSocial" class="row">
             <h3>Connect us</h3>
             <ul>
-                <li><a href="https://www.facebook.com" target="_blank" name="Link - Facebook" rel="noreferrer"><i class="fab fa-facebook"></i></a></li>
-                <li><a href="https://www.twitter.com" target="_blank" name="Link - Twitter" rel="noreferrer"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="https://www.linkedin.com" target="_blank" name="Link - LinkedIn" rel="noreferrer"><i class="fab fa-linkedin-in"></i></a></li>
-                <li><a href="https://www.youtube.com" target="_blank" name="Link - Youtube" rel="noreferrer"><i class="fab fa-youtube"></i></a></li>
-                <li><a href="https://plus.google.com/discover" target="_blank" name="Link - Google+" rel="noreferrer"><i class="fab fa-google-plus-g"></i></a></li>
+                <li><a href="https://www.facebook.com" target="_blank" name="Facebook" rel="noreferrer"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="https://www.twitter.com" target="_blank" name="Twitter" rel="noreferrer"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.linkedin.com" target="_blank" name="LinkedIn" rel="noreferrer"><i class="fab fa-linkedin-in"></i></a></li>
+                <li><a href="https://www.youtube.com" target="_blank" name="Youtube" rel="noreferrer"><i class="fab fa-youtube"></i></a></li>
+                <li><a href="https://plus.google.com/discover" target="_blank" name="Google+" rel="noreferrer"><i class="fab fa-google-plus-g"></i></a></li>
             </ul>
         </div>
         <!-- </div> -->
@@ -898,6 +899,7 @@
     <script>
         function initMap() {
             var mapDiv = document.getElementById('map');
+            var iconMarker = "images/map-marker.png";
             var myLatLng = {
                 lat: 50.8086601,
                 lng: 4.4036572
@@ -907,12 +909,13 @@
                 zoom: 15
             });
             var marker = new google.maps.Marker({
+                icon: iconMarker,
                 position: myLatLng,
                 map: map,
             });
         }
     </script>
-    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDIoX3ZWDDEyaBvo-voT-iXOFaJMETn6II&callback=initMap" async defer></script>
 
 </body>
 

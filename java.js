@@ -142,6 +142,7 @@ $(document).ready(function() {
         // add the text node to the newly created div
         newBackToTop.setAttribute("href", "#headerContent");
         newBackToTop.setAttribute("id", "backToTop");
+        newBackToTop.setAttribute("name", "backToTop");
         // newBackToTop.innerHTML = '<i class="fas fa-arrow-alt-up"></i>';
         newI.classList.add("fas", "fa-arrow-alt-up");
         // newI.setAttribute("class", "fas");
@@ -615,17 +616,30 @@ function RemoveClass(element, name) {
 
 
 // Add active class 
-var btnContainer = document.getElementById("myBtnContainer");
-var btns = btnContainer.getElementsByClassName("btn");
-for (var i = 0; i < btns.length; i++) {
-    btns[i].addEventListener("click", function() {
-        var current = document.getElementsByClassName("active");
-        current[0].className = current[0].className.replace(" active", "");
-        this.className += " active";
-    });
-}
+// var btnContainer = document.getElementById("myBtnContainer");
+// var btns = btnContainer.getElementsByClassName("btn");
+// for (var i = 0; i < btns.length; i++) {
+//     btns[i].addEventListener("click", function() {
+//         var current = document.getElementsByClassName("active");
+//         current[0].className = current[0].className.replace(" active", "");
+//         this.className += " active";
+//     });
+// }
 // modals
 $('.launch-modal').on('click', function(e) {
     e.preventDefault();
     $('#' + $(this).data('modal-id')).modal();
 });
+
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function() {
+        //    navigator.serviceWorker.register('js/sw.js').then(function(registration) {
+        navigator.serviceWorker.register('service-worker.js').then(function(registration) {
+            // Registration was successful
+            console.log('ServiceWorker registration successful with scope: ', registration.scope);
+        }, function(err) {
+            // registration failed :(
+            console.log('ServiceWorker registration failed: ', err);
+        });
+    });
+}
