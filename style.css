@@ -1057,3 +1057,18 @@ Table of Contents
             max-width: 1000px;
         }
     }
+    @media (max-width:767px){
+        .nav + ul.list-inline  {display: none;}
+        .list-inline > li{
+            display: block;
+        }
+       .nav.men-open .list-inline > li{margin-bottom: 5px;}
+        .menu-bar-inner > ul > li > a{display: block;}
+        .nav{display: table;width: 100%;padding: 5px 0;}
+        .nav > div{float: right;}
+        .nav{text-align: center;}
+        .recherche{width:40%;}
+        .titre3{width: 80%;font-size: 150%;margin: 8px;text-align:center;}
+        .titre2{display: table;width: 100%;font-size: 150%}
+        .dropdown{margin:25px; width: 80%;}
+    }  
