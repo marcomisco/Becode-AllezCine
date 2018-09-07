@@ -78,7 +78,7 @@ Mettre un bouton pour remonter jusqu’à l'entête du site, qui disparaît une 
 
 #### La newsletter (BONUS)
 
-## L'équipe
+## L'équipe 
 
 #### Marco Bove
 
